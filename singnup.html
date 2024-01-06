@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singnup</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+       padding: 5px; 
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(34, 78%, 91%);
+    }
+
+     /* header */
+     .navbar {
+            background-color: rgb(176, 131, 131);
+            border-radius: 30px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar ul li{
+            float: right;
+            margin: 13px 20px;
+            list-style: none;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            position: -webkit-sticky;
+        }
+        .navbar ul li a:hover{
+          background-color:  rgba(44, 8, 8, 0.3);
+          padding: 8px 8px;
+          border-radius: 10px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        nav .right li {
+            float: left;
+            margin-left: 25px;
+
+        }
+
+  @media screen and (max-width: 800px) {
+    #sign-up,.navbar{   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack
+ on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  #sign-up,.navbar{
+    float: none;
+    width: 100%;
+  }
+}
+.red{
+    font-size: 20px;
+    font-family: Comic Sans MS;
+}
+.red::after{
+            content: '*';
+            color: red;
+        }
+#fsignup{
+    background: linear-gradient(to right, #d7c4ad,  #b08383);
+    justify-content: center;
+    width: 400px;
+    text-align: left;
+    padding: 15px 20px;
+    margin-top: 90px;
+    margin-left: 37%;
+    border-radius: 15px;
+}
+#submit{
+    background-color: #a46464;
+    border-radius: 3px;   
+    text-align: center;
+    margin-left: 140px; 
+    font-size: 17px;
+    font-family: Comic Sans MS;
+}
+#submit:hover{
+    padding: 2px;
+}
+.box{
+    text-decoration: none;
+    border: none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    width: 55%;
+    border-bottom: 2px solid rgb(181, 131, 131);
+    /* float: right; */
+    margin-left: 15px;
+    }
+    #terms-conditions{
+        margin-left: 10px;
+    }
+    .red a{
+        text-decoration: none;
+        color: black;
+        font-family: Comic Sans MS;
+        border-bottom: 2px solid #a46464;
+    }
+    .red a:hover{
+        padding: 10px;
+        background-color: #ba9595;
+        border: none;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+  <header>
+    <nav class="navbar">
+        <ul> 
+            <li><a href="login.html">Login</a></li>
+            <li><a href="singnup.html">Sign Up</a></li> 
+            <div class="right">
+                <li><a href="landing page.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li> 
+            </div>
+        </ul>
+    </nav>
+</header>
+<br>
+<div id="fsignup">
+    <form name="myform">
+        <label class="red">Name: </label><input class="box" type="text" name="name" placeholder="Name" required ><br/><br>
+        <label class="red">E-Mail: </label><input class="box" type="text" name="name" placeholder="abcd@gamil.com"  required><br/><br>
+        <label class="red">Username: </label><input class="box" type="text" name="name" placeholder="user@1234" required ><br/><br>
+        <label class="red">Phone:</label><input class="box" type="number" name="phone" placeholder="+91-9654785478" required><br/><br>
+        <label class="red"> Date of Birth:</label><input class="box" type="date" name="dob" required ><br/><br>
+        <label class="red">Address: </label><input class="box" type="text" name="address" placeholder="Address"required ><br/><br>
+        <label class="red">State:</label><input class="box" type="text" name="State" placeholder="State"required ><br/><br>
+        <label class="red">City:</label><input class="box" type="text" name="City" placeholder="City" required><br/><br>
+        <label class="red">Pin code:</label><input class="box" type="number" name="Pin"  placeholder="Pincode" required><br/><br>
+        <label class="red">Password: </label><input class="box" type="password" name="password" placeholder="Password" required ><br/><br>
+        <label class="red" for="Termsc" name="terms-conditions"><a href="Terms and Conditions.html">Terms And Condition</a></label><input  id="terms-conditions"  type="checkbox" required><br/><br>
+
+        <input id="submit" type="submit" value="Sign Up">
+    </form>
+</div>
+
+
+    
+</body>
+</html>
