@@ -74,20 +74,35 @@
           padding: 8px 8px;
           border-radius: 10px;
         }
-    @media screen and (max-width: 800px) {
-  .container, .background-image {   
-    width: 100%;
-    padding: 0;
-  }
-}
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .image-item {
+        width: 160px;
+        height: 120px;
+      }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack
- on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
+      .background-image {
+        height: 40vh;
+      }
+
+      .content {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-item {
+        width: 120px;
+        height: 90px;
+      }
+
+      .background-image {
+        height: 30vh;
+      }
+
+      .navbar ul {
+        gap: 10px;
+      }
 }
 
 </style>
